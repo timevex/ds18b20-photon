@@ -91,9 +91,9 @@ float DS18B20::getTemperature(){
         Serial.println(" ");*/
     }
     _dataCRC = (OneWire::crc8(data, 8));
-    Serial.println(_dataCRC, HEX);
+    //Serial.println(_dataCRC, HEX);
     _readCRC = (data[8]);
-    Serial.println(_readCRC, HEX);
+    //Serial.println(_readCRC, HEX);
 
     // Convert the data to actual temperature
     // because the result is a 16 bit signed integer, it should
